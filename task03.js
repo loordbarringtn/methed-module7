@@ -1,15 +1,20 @@
-const names= ['Noah', 'Liam', 'Mason', 'Jacob', 'Robot', 'William', 'Ethan', 'Michael', 'Alexander'];
-
+const names = [
+  "Noah",
+  "Liam",
+  "Mason",
+  "Jacob",
+  "Robot",
+  "William",
+  "Ethan",
+  "Michael",
+  "Alexander",
+];
 
 const addPrefix = (arrayName, prefix) => {
-    for (let i=0; i < arrayName.length; i++) {
-        arrayName[i] = `${prefix} ` + arrayName[i];
-    }
-    return arrayName;
-}
+  for (key in arrayName) {
+    arrayName[key] = prefix + ' ' + arrayName[key];
+  }
+  return arrayName;
+};
 
-console.log(addPrefix(names, 'Mr.'));
-
-
-
-
+console.log(addPrefix(names, "Mr."));

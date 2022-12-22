@@ -1,4 +1,4 @@
-const allСashbox = [
+const allCashbox = [
   [12, 4500],
   [7, 3210],
   [4, 650],
@@ -17,4 +17,4 @@ const getAveragePriceGoods = (arrayName) => {
   return Math.ceil(sum / arrayName.length);
 };
 
-console.log(getAveragePriceGoods(allСashbox));
+console.log(getAveragePriceGoods(allCashbox));
